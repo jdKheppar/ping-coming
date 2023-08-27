@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Ping coming soon page</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .colors {
+        color: hsl(0, 100%, 74%);
+        color: hsl(154, 59%, 51%);
+        color: hsl(248, 32%, 49%);
+        color: hsl(249, 10%, 26%);
+        color: hsl(246, 25%, 77%);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+      }
+      .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 60vw;
+      }
+      .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5vh;
+        margin-bottom: 3.5vh;
+      }
+      #email {
+        height: auto;
+        padding: 18px 35px 18px 25px;
+        width: 100%;
+        border-radius: 100px;
+      }
+      #email-label {
+        background-color: hsl(223, 87%, 63%);
+        color: white;
+        height: auto;
+        padding: 18px 20px 18px 20px;
+        width: 60%;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+      }
+      #main-img {
+        width: 100%;
+      }
+      footer {
+        margin-bottom: 2rem;
+      }
+      /* For Tablet Size Screens */
+      @media only screen and (max-width: 1000px) and (min-width: 376px) {
+        .inner-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 60vw;
+        }
+      }
+
+      /* For Mobile size screens */
+      @media only screen and (max-width: 375px) {
+        .inner-container {
+          width: 95vw;
+        }
+        .email {
+          flex-direction: column;
+
+          width: 80%;
+        }
+        #email {
+          width: 100%;
+        }
+        #email-label {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 6px;
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <img src="./images/logo.svg" alt="ping" class="logo" />
+        <h1>We are launching soon!</h1>
+        <p>Subscribe and get notified</p>
+        <div class="email">
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="    Your email address"
+          />
+          <label id="email-label" for="email">Notify Me</label>
+        </div>
+
+        <img
+          id="main-img"
+          src="./images/illustration-dashboard.png"
+          alt="main image"
+        />
+        <footer>&copy; Copyright Ping. All rights reserved.</footer>
+      </div>
+    </div>
+  </body>
+</html>
